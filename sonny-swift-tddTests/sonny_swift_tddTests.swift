@@ -16,4 +16,8 @@ class sonny_swift_tddTests: XCTestCase {
         product = five.times(3)
         XCTAssertEqual(15, product.amount)
     }
+    func testEquality() throws {
+        XCTAssertTrue(Dollar(5).equals(Dollar(5)))
+        XCTAssertFalse(Dollar(5).equals(Dollar(6)))
+    }
 }
