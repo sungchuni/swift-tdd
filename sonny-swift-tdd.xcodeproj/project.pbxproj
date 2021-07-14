@@ -11,8 +11,9 @@
 		EC0387EB269F52F70076C4E2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0387EA269F52F70076C4E2 /* ContentView.swift */; };
 		EC0387ED269F52F90076C4E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC0387EC269F52F90076C4E2 /* Assets.xcassets */; };
 		EC0387F0269F52F90076C4E2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC0387EF269F52F90076C4E2 /* Preview Assets.xcassets */; };
-		EC0387FB269F52F90076C4E2 /* sonny_swift_tddTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0387FA269F52F90076C4E2 /* sonny_swift_tddTests.swift */; };
 		EC038806269F52F90076C4E2 /* sonny_swift_tddUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC038805269F52F90076C4E2 /* sonny_swift_tddUITests.swift */; };
+		EC038814269F533A0076C4E2 /* Dollar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC038813269F533A0076C4E2 /* Dollar.swift */; };
+		EC038816269F54200076C4E2 /* sonny_swift_tddTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0387FA269F52F90076C4E2 /* sonny_swift_tddTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		EC038801269F52F90076C4E2 /* sonny-swift-tddUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sonny-swift-tddUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC038805269F52F90076C4E2 /* sonny_swift_tddUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sonny_swift_tddUITests.swift; sourceTree = "<group>"; };
 		EC038807269F52F90076C4E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC038813269F533A0076C4E2 /* Dollar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dollar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				EC0387EC269F52F90076C4E2 /* Assets.xcassets */,
 				EC0387F1269F52F90076C4E2 /* Info.plist */,
 				EC0387EE269F52F90076C4E2 /* Preview Content */,
+				EC038813269F533A0076C4E2 /* Dollar.swift */,
 			);
 			path = "sonny-swift-tdd";
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC0387EB269F52F70076C4E2 /* ContentView.swift in Sources */,
+				EC038814269F533A0076C4E2 /* Dollar.swift in Sources */,
 				EC0387E9269F52F70076C4E2 /* sonny_swift_tddApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC0387FB269F52F90076C4E2 /* sonny_swift_tddTests.swift in Sources */,
+				EC038816269F54200076C4E2 /* sonny_swift_tddTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
