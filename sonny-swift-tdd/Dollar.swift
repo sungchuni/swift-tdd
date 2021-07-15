@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct Dollar {
-    var amount: Int
+struct Dollar: Equatable {
+    private var amount: Int
     init(_ amount: Int) {
         self.amount = amount
     }

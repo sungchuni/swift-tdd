@@ -11,10 +11,8 @@ import XCTest
 class sonny_swift_tddTests: XCTestCase {
     func testMultiplication() throws {
         var five = Dollar(5)
-        var product = five.times(2)
-        XCTAssertEqual(10, product.amount)
-        product = five.times(3)
-        XCTAssertEqual(15, product.amount)
+        XCTAssertEqual(Dollar(10), five.times(2))
+        XCTAssertEqual(Dollar(15), five.times(3))
     }
     func testEquality() throws {
         XCTAssertTrue(Dollar(5).equals(Dollar(5)))
