@@ -16,10 +16,7 @@ class Money: Equatable {
         let money = object as? Money
         return amount == money?.amount
     }
-    func times(_ multiplier: Int) -> Money {
-        return Money(amount * multiplier)
-    }
     static func == (lhs: Money, rhs: Money) -> Bool {
-        return lhs.equals(rhs)
+        return lhs.equals(rhs) && type(of: lhs) == type(of: rhs)
     }
 }
