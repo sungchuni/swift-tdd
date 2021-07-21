@@ -26,4 +26,8 @@ class sonny_swift_tddTests: XCTestCase {
         XCTAssertNotEqual(Money.franc(5), Money.franc(6))
         XCTAssertNotEqual(Money.dollar(5), Money.franc(5))
     }
+    func testCurrency() throws {
+        XCTAssertEqual("USD", Money.dollar(1).getCurrency())
+        XCTAssertEqual("CHF", Money.franc(1).getCurrency())
+    }
 }

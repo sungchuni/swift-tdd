@@ -9,6 +9,6 @@ import Foundation
 
 class Franc: Money {
     func times(_ multiplier: Int) -> Money {
-        return Franc(amount * multiplier)
+        return Money.franc(amount * multiplier)
     }
 }
