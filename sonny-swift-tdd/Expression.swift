@@ -7,4 +7,6 @@
 
 import Foundation
 
-protocol Expression {}
+protocol Expression {
+    func reduce(to: String) -> Money
+}

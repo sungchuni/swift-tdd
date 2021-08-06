@@ -23,11 +23,29 @@ class sonny_swift_tddTests: XCTestCase {
         XCTAssertEqual("USD", Money.dollar(1).currency)
         XCTAssertEqual("CHF", Money.franc(1).currency)
     }
-    func testSimpleAddition() {
+    func testSimpleAddition() throws {
         let five = Money.dollar(5)
         let sum = five.plus(five)
         let bank = Bank()
-        let reduced = bank.reduce(sum, "USD")
+        let reduced = bank.reduce(source: sum, to: "USD")
         XCTAssertEqual(Money.dollar(10), reduced)
+    }
+    func testPlusReturnsSum() throws {
+        let five = Money.dollar(5)
+        let result = five.plus(five)
+        let sum = result as! Sum
+        XCTAssertEqual(five, sum.augend)
+        XCTAssertEqual(five, sum.addend)
+    }
+    func testReduceSum() throws {
+        let sum = Sum(Money.dollar(3), Money.dollar(4))
+        let bank = Bank()
+        let result = bank.reduce(source: sum, to: "USD")
+        XCTAssertEqual(Money.dollar(7), result)
+    }
+    func testReduceMoney() throws {
+        let bank = Bank()
+        let result = bank.reduce(source: Money.dollar(1), to: "USD")
+        XCTAssertEqual(Money.dollar(1), result)
     }
 }

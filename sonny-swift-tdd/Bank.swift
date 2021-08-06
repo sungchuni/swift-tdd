@@ -8,7 +8,7 @@
 import Foundation
 
 struct Bank {
-    func reduce(_ source: Expression, _ to: String) -> Money {
-        return Money.dollar(10)
+    func reduce(source: Expression, to: String) -> Money {
+        return source.reduce(to: to)
     }
 }

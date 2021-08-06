@@ -14,6 +14,7 @@
 		EC038806269F52F90076C4E2 /* sonny_swift_tddUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC038805269F52F90076C4E2 /* sonny_swift_tddUITests.swift */; };
 		EC038816269F54200076C4E2 /* sonny_swift_tddTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0387FA269F52F90076C4E2 /* sonny_swift_tddTests.swift */; };
 		EC03881A269FC9AE0076C4E2 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC038819269FC9AE0076C4E2 /* Money.swift */; };
+		EC56BCE126B23EDB0087C043 /* Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC56BCE026B23EDB0087C043 /* Sum.swift */; };
 		ECD2DB5526A9104C00D84EC3 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD2DB5426A9104C00D84EC3 /* Expression.swift */; };
 		ECD2DB5726A9107400D84EC3 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD2DB5626A9107400D84EC3 /* Bank.swift */; };
 /* End PBXBuildFile section */
@@ -49,6 +50,7 @@
 		EC038805269F52F90076C4E2 /* sonny_swift_tddUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sonny_swift_tddUITests.swift; sourceTree = "<group>"; };
 		EC038807269F52F90076C4E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC038819269FC9AE0076C4E2 /* Money.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
+		EC56BCE026B23EDB0087C043 /* Sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sum.swift; sourceTree = "<group>"; };
 		ECD2DB5426A9104C00D84EC3 /* Expression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expression.swift; sourceTree = "<group>"; };
 		ECD2DB5626A9107400D84EC3 /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,6 +111,7 @@
 				EC038819269FC9AE0076C4E2 /* Money.swift */,
 				ECD2DB5426A9104C00D84EC3 /* Expression.swift */,
 				ECD2DB5626A9107400D84EC3 /* Bank.swift */,
+				EC56BCE026B23EDB0087C043 /* Sum.swift */,
 			);
 			path = "sonny-swift-tdd";
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				ECD2DB5726A9107400D84EC3 /* Bank.swift in Sources */,
 				EC0387E9269F52F70076C4E2 /* sonny_swift_tddApp.swift in Sources */,
 				ECD2DB5526A9104C00D84EC3 /* Expression.swift in Sources */,
+				EC56BCE126B23EDB0087C043 /* Sum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
