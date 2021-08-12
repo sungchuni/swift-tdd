@@ -8,5 +8,6 @@
 import Foundation
 
 protocol Expression {
+    func plus(_ addend: Expression) -> Expression
     func reduce(_ bank: Bank, to: String) -> Money
 }

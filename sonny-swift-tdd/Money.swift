@@ -23,10 +23,10 @@ class Money: Expression, Equatable {
     static func franc(_ amount: Int) -> Money {
         return Money(amount, "CHF")
     }
-    func times(_ multiplier: Int) -> Money {
+    func times(_ multiplier: Int) -> Expression {
         return Money(amount * multiplier, currency)
     }
-    func plus(_ addend: Money) -> Expression {
+    func plus(_ addend: Expression) -> Expression {
         return Sum(self, addend)
     }
     func reduce(_ bank: Bank, to: String) -> Money {

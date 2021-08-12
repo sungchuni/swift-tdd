@@ -11,8 +11,8 @@ import XCTest
 class sonny_swift_tddTests: XCTestCase {
     func testMultiplication() throws {
         let five = Money.dollar(5)
-        XCTAssertEqual(Money.dollar(10), five.times(2))
-        XCTAssertEqual(Money.dollar(15), five.times(3))
+        XCTAssertEqual(Money.dollar(10), five.times(2) as! Money)
+        XCTAssertEqual(Money.dollar(15), five.times(3) as! Money)
     }
     func testEquality() throws {
         XCTAssertEqual(Money.dollar(5), Money.dollar(5))
@@ -34,8 +34,8 @@ class sonny_swift_tddTests: XCTestCase {
         let five = Money.dollar(5)
         let result = five.plus(five)
         let sum = result as! Sum
-        XCTAssertEqual(five, sum.augend)
-        XCTAssertEqual(five, sum.addend)
+        XCTAssertEqual(five, sum.augend as! Money)
+        XCTAssertEqual(five, sum.addend as! Money)
     }
     func testReduceSum() throws {
         let sum = Sum(Money.dollar(3), Money.dollar(4))
@@ -56,5 +56,13 @@ class sonny_swift_tddTests: XCTestCase {
     }
     func testIdentityRate() throws {
         XCTAssertEqual(1, Bank().rate("USD", "USD"))
+    }
+    func testMixedAddition() throws {
+        let fiveBucks: Expression = Money.dollar(5)
+        let tenFrancs: Expression = Money.franc(10)
+        var bank = Bank()
+        bank.addRate("CHF", "USD", 2)
+        let result = bank.reduce(source: fiveBucks.plus(tenFrancs), to: "USD")
+        XCTAssertEqual(Money.dollar(10), result)
     }
 }
