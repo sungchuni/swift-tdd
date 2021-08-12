@@ -29,7 +29,8 @@ class Money: Expression, Equatable {
     func plus(_ addend: Money) -> Expression {
         return Sum(self, addend)
     }
-    func reduce(to: String) -> Money {
-        return self
+    func reduce(_ bank: Bank, to: String) -> Money {
+        let rate = bank.rate(currency, to)
+        return Money(amount / rate, to)
     }
 }
