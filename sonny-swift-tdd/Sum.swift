@@ -15,10 +15,13 @@ struct Sum: Expression {
         self.addend = addend
     }
     func plus(_ addend: Expression) -> Expression {
-        return augend
+        return Sum(self, addend)
     }
     func reduce(_ bank: Bank, to: String) -> Money {
         let amount = augend.reduce(bank, to: to).amount + addend.reduce(bank, to: to).amount
         return Money(amount, to)
+    }
+    func times(_ multiplier: Int) -> Expression {
+        Sum(augend.times(multiplier), addend.times(multiplier))
     }
 }

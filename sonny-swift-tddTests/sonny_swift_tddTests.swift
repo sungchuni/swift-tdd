@@ -65,4 +65,26 @@ class sonny_swift_tddTests: XCTestCase {
         let result = bank.reduce(source: fiveBucks.plus(tenFrancs), to: "USD")
         XCTAssertEqual(Money.dollar(10), result)
     }
+    func testSumPlusMoney() throws {
+        let fiveBucks: Expression = Money.dollar(5)
+        let tenFrancs: Expression = Money.franc(10)
+        var bank = Bank()
+        bank.addRate("CHF", "USD", 2)
+        let sum = Sum(fiveBucks, tenFrancs).plus(fiveBucks)
+        let result = bank.reduce(source: sum, to: "USD")
+        XCTAssertEqual(Money.dollar(15), result)
+    }
+    func testSumTimes() throws {
+        let fiveBucks: Expression = Money.dollar(5)
+        let tenFrancs: Expression = Money.franc(10)
+        var bank = Bank()
+        bank.addRate("CHF", "USD", 2)
+        let sum = Sum(fiveBucks, tenFrancs).times(2)
+        let result = bank.reduce(source: sum, to: "USD")
+        XCTAssertEqual(Money.dollar(20), result)
+    }
+    func testPlusSameCurrencyReturnsMoney() throws {
+        let sum = Money.dollar(1).plus(Money.dollar(1))
+        XCTAssertTrue(sum is Money)
+    }
 }
