@@ -20,5 +20,6 @@ class sonny_unitTests: XCTestCase {
     func testWasSetup() throws {
         test.run()
         XCTAssertTrue(test.wasSetup)
+        XCTAssertEqual("setUp ", test.log)
     }
 }

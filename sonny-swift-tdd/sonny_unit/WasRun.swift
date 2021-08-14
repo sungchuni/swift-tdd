@@ -10,8 +10,10 @@ import Foundation
 class WasRun: TestCase {
     var wasRun = false
     var wasSetup = false
+    var log = ""
     override func setUp() {
         wasSetup = true
+        log += "setUp "
     }
     override func testMethod() {
         wasRun = true
