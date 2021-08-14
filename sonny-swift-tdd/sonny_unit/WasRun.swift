@@ -17,5 +17,6 @@ class WasRun: TestCase {
     }
     override func testMethod() {
         wasRun = true
+        log += "testMethod "
     }
 }
