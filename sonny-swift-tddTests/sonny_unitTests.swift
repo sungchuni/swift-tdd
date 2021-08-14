@@ -19,4 +19,9 @@ class sonny_unitTests: XCTestCase {
         let result = test.run()
         XCTAssertEqual("1 run, 0 failed", result.summary())
     }
+    func testFailedResult() throws {
+        let test = WasRun("testMethod")
+        let result = test.run()
+        XCTAssertEqual("1 run, 1 failed", result.summary())
+    }
 }

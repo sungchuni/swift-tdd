@@ -7,6 +7,10 @@
 
 import Foundation
 
+enum WasRunError: Error {
+    case base
+}
+
 class WasRun: TestCase {
     var log = ""
     override func setUp() {
@@ -17,5 +21,8 @@ class WasRun: TestCase {
     }
     override func testMethod() {
         log += "testMethod "
+    }
+    func testBrokenMethod() throws {
+        throw WasRunError.base
     }
 }
