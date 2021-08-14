@@ -12,7 +12,7 @@ class TestCase {
     init(_ name: String) {
         self.name = name
     }
-    func run() -> TestResult {
+    @discardableResult func run() -> TestResult {
         var result = TestResult()
         result.testStarted()
         setUp()
