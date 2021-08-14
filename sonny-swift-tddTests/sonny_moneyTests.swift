@@ -8,7 +8,7 @@
 import XCTest
 @testable import sonny_swift_tdd
 
-class sonny_swift_tddTests: XCTestCase {
+class sonny_moneyTests: XCTestCase {
     func testMultiplication() throws {
         let five = Money.dollar(5)
         XCTAssertEqual(Money.dollar(10), five.times(2) as! Money)
@@ -82,9 +82,5 @@ class sonny_swift_tddTests: XCTestCase {
         let sum = Sum(fiveBucks, tenFrancs).times(2)
         let result = bank.reduce(source: sum, to: "USD")
         XCTAssertEqual(Money.dollar(20), result)
-    }
-    func testPlusSameCurrencyReturnsMoney() throws {
-        let sum = Money.dollar(1).plus(Money.dollar(1))
-        XCTAssertTrue(sum is Money)
     }
 }
