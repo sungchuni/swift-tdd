@@ -9,17 +9,9 @@ import XCTest
 @testable import sonny_swift_tdd
 
 class sonny_unitTests: XCTestCase {
-    var test: WasRun! = nil
-    override func setUp() {
-        test = WasRun("testMethod")
-    }
-    func testRunning() throws {
+    func testTemplateMethod() throws {
+        let test = WasRun("testMethod")
         test.run()
-        XCTAssertTrue(test.wasRun)
-    }
-    func testWasSetup() throws {
-        test.run()
-        XCTAssertTrue(test.wasSetup)
-        XCTAssertEqual("setUp ", test.log)
+        XCTAssertEqual("setUp testMethod ", test.log)
     }
 }
