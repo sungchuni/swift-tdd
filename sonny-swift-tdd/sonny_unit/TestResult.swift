@@ -8,7 +8,11 @@
 import Foundation
 
 struct TestResult {
+    var runCount = 0
+    mutating func testStarted() {
+        runCount += 1
+    }
     func summary() -> String {
-        "1 run, 0 failed"
+        "\(runCount) run, 0 failed"
     }
 }

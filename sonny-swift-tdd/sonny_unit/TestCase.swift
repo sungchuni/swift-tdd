@@ -13,12 +13,14 @@ class TestCase {
         self.name = name
     }
     func run() -> TestResult {
+        var result = TestResult()
+        result.testStarted()
         setUp()
         if name == "testMethod" {
             testMethod()
         }
         tearDown()
-        return TestResult()
+        return result
     }
     func setUp() {}
     func tearDown() {}
