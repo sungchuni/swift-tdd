@@ -12,6 +12,6 @@ class sonny_unitTests: XCTestCase {
     func testTemplateMethod() throws {
         let test = WasRun("testMethod")
         test.run()
-        XCTAssertEqual("setUp testMethod ", test.log)
+        XCTAssertEqual("setUp testMethod tearDown ", test.log)
     }
 }

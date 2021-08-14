@@ -17,7 +17,9 @@ class TestCase {
         if name == "testMethod" {
             testMethod()
         }
+        tearDown()
     }
     func setUp() {}
+    func tearDown() {}
     func testMethod() {}
 }
