@@ -16,13 +16,20 @@ class TestCase {
         var result = TestResult()
         result.testStarted()
         setUp()
-        if name == "testMethod" {
-            testMethod()
+        do {
+            if name == "testMethod" {
+                testMethod()
+            } else if name == "testBrokenMethod" {
+                try testBrokenMethod()
+            }
+        } catch {
+            result.testFailed()
         }
         tearDown()
         return result
     }
     func setUp() {}
     func tearDown() {}
+    func testBrokenMethod() throws {}
     func testMethod() {}
 }

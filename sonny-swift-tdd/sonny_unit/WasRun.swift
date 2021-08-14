@@ -19,10 +19,10 @@ class WasRun: TestCase {
     override func tearDown() {
         log += "tearDown "
     }
+    override func testBrokenMethod() throws {
+        throw WasRunError.base
+    }
     override func testMethod() {
         log += "testMethod "
-    }
-    func testBrokenMethod() throws {
-        throw WasRunError.base
     }
 }

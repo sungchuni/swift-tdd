@@ -9,10 +9,14 @@ import Foundation
 
 struct TestResult {
     var runCount = 0
+    var failureCount = 0
+    func summary() -> String {
+        "\(runCount) run, \(failureCount) failed"
+    }
+    mutating func testFailed() {
+        failureCount += 1
+    }
     mutating func testStarted() {
         runCount += 1
-    }
-    func summary() -> String {
-        "\(runCount) run, 0 failed"
     }
 }
