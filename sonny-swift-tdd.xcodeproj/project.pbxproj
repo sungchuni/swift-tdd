@@ -15,6 +15,8 @@
 		EC038816269F54200076C4E2 /* sonny_moneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0387FA269F52F90076C4E2 /* sonny_moneyTests.swift */; };
 		EC03881A269FC9AE0076C4E2 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC038819269FC9AE0076C4E2 /* Money.swift */; };
 		EC56BCE126B23EDB0087C043 /* Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC56BCE026B23EDB0087C043 /* Sum.swift */; };
+		ECBA334326C8292700DB3679 /* sonny_unitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBA334226C8292700DB3679 /* sonny_unitTests.swift */; };
+		ECBA334D26C8299400DB3679 /* WasRun.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBA334C26C8299400DB3679 /* WasRun.swift */; };
 		ECD2DB5526A9104C00D84EC3 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD2DB5426A9104C00D84EC3 /* Expression.swift */; };
 		ECD2DB5726A9107400D84EC3 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD2DB5626A9107400D84EC3 /* Bank.swift */; };
 		ECE6D71E26C5414C001BB61F /* Pair.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE6D71D26C5414C001BB61F /* Pair.swift */; };
@@ -52,6 +54,8 @@
 		EC038807269F52F90076C4E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC038819269FC9AE0076C4E2 /* Money.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
 		EC56BCE026B23EDB0087C043 /* Sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sum.swift; sourceTree = "<group>"; };
+		ECBA334226C8292700DB3679 /* sonny_unitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sonny_unitTests.swift; sourceTree = "<group>"; };
+		ECBA334C26C8299400DB3679 /* WasRun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasRun.swift; sourceTree = "<group>"; };
 		ECD2DB5426A9104C00D84EC3 /* Expression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expression.swift; sourceTree = "<group>"; };
 		ECD2DB5626A9107400D84EC3 /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
 		ECE6D71D26C5414C001BB61F /* Pair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pair.swift; sourceTree = "<group>"; };
@@ -105,6 +109,7 @@
 		EC0387E7269F52F70076C4E2 /* sonny-swift-tdd */ = {
 			isa = PBXGroup;
 			children = (
+				ECBA334B26C8299000DB3679 /* sonny_unit */,
 				ECC9987B26C82757009E88DA /* sonny_money */,
 				EC0387E8269F52F70076C4E2 /* sonny_swift_tddApp.swift */,
 				EC0387EA269F52F70076C4E2 /* ContentView.swift */,
@@ -126,6 +131,7 @@
 		EC0387F9269F52F90076C4E2 /* sonny-swift-tddTests */ = {
 			isa = PBXGroup;
 			children = (
+				ECBA334226C8292700DB3679 /* sonny_unitTests.swift */,
 				EC0387FA269F52F90076C4E2 /* sonny_moneyTests.swift */,
 				EC0387FC269F52F90076C4E2 /* Info.plist */,
 			);
@@ -139,6 +145,14 @@
 				EC038807269F52F90076C4E2 /* Info.plist */,
 			);
 			path = "sonny-swift-tddUITests";
+			sourceTree = "<group>";
+		};
+		ECBA334B26C8299000DB3679 /* sonny_unit */ = {
+			isa = PBXGroup;
+			children = (
+				ECBA334C26C8299400DB3679 /* WasRun.swift */,
+			);
+			path = sonny_unit;
 			sourceTree = "<group>";
 		};
 		ECC9987B26C82757009E88DA /* sonny_money */ = {
@@ -289,6 +303,7 @@
 				ECD2DB5526A9104C00D84EC3 /* Expression.swift in Sources */,
 				ECE6D71E26C5414C001BB61F /* Pair.swift in Sources */,
 				EC56BCE126B23EDB0087C043 /* Sum.swift in Sources */,
+				ECBA334D26C8299400DB3679 /* WasRun.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC038816269F54200076C4E2 /* sonny_moneyTests.swift in Sources */,
+				ECBA334326C8292700DB3679 /* sonny_unitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
