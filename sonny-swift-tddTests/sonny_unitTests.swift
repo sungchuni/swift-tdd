@@ -14,4 +14,9 @@ class sonny_unitTests: XCTestCase {
         test.run()
         XCTAssertEqual("setUp testMethod tearDown ", test.log)
     }
+    func testResult() throws {
+        let test = WasRun("testMethod")
+        let result = test.run()
+        XCTAssertEqual("1 run, 0 failed", result.summary())
+    }
 }

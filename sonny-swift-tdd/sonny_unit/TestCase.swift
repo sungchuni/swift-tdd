@@ -12,12 +12,13 @@ class TestCase {
     init(_ name: String) {
         self.name = name
     }
-    func run() -> Void {
+    func run() -> TestResult {
         setUp()
         if name == "testMethod" {
             testMethod()
         }
         tearDown()
+        return TestResult()
     }
     func setUp() {}
     func tearDown() {}
