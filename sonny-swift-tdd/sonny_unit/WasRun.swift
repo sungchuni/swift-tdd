@@ -7,18 +7,13 @@
 
 import Foundation
 
-struct WasRun {
-    var name: String
+class WasRun: TestCase {
     var wasRun = false
-    init(_ name: String) {
-        self.name = name
+    var wasSetup = false
+    override func setUp() {
+        wasSetup = true
     }
-    mutating func run() -> Void {
-        if name == "testMethod" {
-            testMethod()
-        }
-    }
-    mutating func testMethod() {
+    override func testMethod() {
         wasRun = true
     }
 }
