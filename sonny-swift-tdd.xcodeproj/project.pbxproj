@@ -19,6 +19,7 @@
 		ECBA334D26C8299400DB3679 /* WasRun.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBA334C26C8299400DB3679 /* WasRun.swift */; };
 		ECBA334F26C82B3800DB3679 /* TestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBA334E26C82B3800DB3679 /* TestCase.swift */; };
 		ECBA335126C83EE600DB3679 /* TestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBA335026C83EE600DB3679 /* TestResult.swift */; };
+		ECBA335326C998FA00DB3679 /* TestSuite.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBA335226C998FA00DB3679 /* TestSuite.swift */; };
 		ECD2DB5526A9104C00D84EC3 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD2DB5426A9104C00D84EC3 /* Expression.swift */; };
 		ECD2DB5726A9107400D84EC3 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD2DB5626A9107400D84EC3 /* Bank.swift */; };
 		ECE6D71E26C5414C001BB61F /* Pair.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE6D71D26C5414C001BB61F /* Pair.swift */; };
@@ -60,6 +61,7 @@
 		ECBA334C26C8299400DB3679 /* WasRun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasRun.swift; sourceTree = "<group>"; };
 		ECBA334E26C82B3800DB3679 /* TestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCase.swift; sourceTree = "<group>"; };
 		ECBA335026C83EE600DB3679 /* TestResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResult.swift; sourceTree = "<group>"; };
+		ECBA335226C998FA00DB3679 /* TestSuite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSuite.swift; sourceTree = "<group>"; };
 		ECD2DB5426A9104C00D84EC3 /* Expression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expression.swift; sourceTree = "<group>"; };
 		ECD2DB5626A9107400D84EC3 /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
 		ECE6D71D26C5414C001BB61F /* Pair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pair.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				ECBA334C26C8299400DB3679 /* WasRun.swift */,
 				ECBA334E26C82B3800DB3679 /* TestCase.swift */,
 				ECBA335026C83EE600DB3679 /* TestResult.swift */,
+				ECBA335226C998FA00DB3679 /* TestSuite.swift */,
 			);
 			path = sonny_unit;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				EC0387EB269F52F70076C4E2 /* ContentView.swift in Sources */,
 				ECD2DB5726A9107400D84EC3 /* Bank.swift in Sources */,
 				EC0387E9269F52F70076C4E2 /* sonny_swift_tddApp.swift in Sources */,
+				ECBA335326C998FA00DB3679 /* TestSuite.swift in Sources */,
 				ECD2DB5526A9104C00D84EC3 /* Expression.swift in Sources */,
 				ECBA334F26C82B3800DB3679 /* TestCase.swift in Sources */,
 				ECE6D71E26C5414C001BB61F /* Pair.swift in Sources */,

@@ -12,8 +12,7 @@ class TestCase {
     init(_ name: String) {
         self.name = name
     }
-    @discardableResult func run() -> TestResult {
-        var result = TestResult()
+    func run(_ result: inout TestResult) {
         result.testStarted()
         setUp()
         do {
@@ -26,7 +25,6 @@ class TestCase {
             result.testFailed()
         }
         tearDown()
-        return result
     }
     func setUp() {}
     func tearDown() {}
